@@ -1,16 +1,17 @@
 <IDOCTYPE html>
     <html>
         <title>About Us</title>
+        <link rel="stylesheet" href="style.css">
         <body>
             <head>
                 <div>
-                    <table style="width: 100%; background-color: aquamarine;">
+                    <table class="navBar">
                         <tr>
                             <td>
                                 <a href="index.html"><img src="assests/logo/logo.jpg" width="100px" alt=""></a>
                             </td>
                             <td align="right">
-                                <nav style="margin-right: 100px;">
+                                <nav>
                                     <a href="index.html">Home</a>
                                     <a href="About me.html" style="margin: 50px;">About me</a>
                                     <a href="Contact us.html">Contact me</a> 
@@ -20,37 +21,61 @@
                     </table>
                 </div>
             </head>
-            <main style="background-color: aquamarine;">
-                <div>
-                    <table style="width: 100%; height: 400px;">
+            <main class="contain">
+                <table>
+                    <tr class="infoHeader">
+                        <td>
+                            <h1>Personal Info</h1>
+                        </td>
+                        <td colspan="2" ><h1>Skills</h1></td>
+                    </tr>
+                    <tr>
+                        <td class="pInfo" rowspan="6">
+                            <div >
+                                <ul>
+                                <li><pre>Surname:                               Ika</pre></li>
+                                <li><pre>Name:                                    Thoriso</pre></li>
+                                <li><pre>Identity_number:                    ##############</pre></li>
+                                <li><pre>Race:                                     African</pre></li>
+                                <li><pre>Home_language:                   Sepedi</pre></li>
+                                </ul>
+                                <h1>Educational background</h1>
+                                <ul>
+                                    <li><pre>Institution:                               Tshwane University of Technology</pre></li>
+                                    <li><pre>Degree:                                   National diploma: Information Technology (Software 
+                                                development)</pre></li>
+                                    <li><pre>Year:                                        2022<pre></li>
+                                    <li><pre>Major Subjects:                       Technical Programming and Development Software </pre></li>
+                                    </ul>
+                                    <ul style="margin-top: 35px;">
+                                        <li><pre>Highest Grade passed:           Grade 12</pre></li>
+                                        <li><pre>School:                                    Bokamoso Senior Secondary School</pre></li>
+                                        <li><pre>Year:                                        2015<pre></li>
+                                    </ul>
+                            </div>
+                        </td>
+                        <td rowspan="2" style="text-align: center;"><img src="assests/img/c-.png" class="icon1"> </td>
+                        <td><h3 class="subject">C++</h3></td>
                         <tr>
-                            <td style="background-color: cadetblue; width: 30%; text-align: center; padding-bottom: 30%">
-                                <img src="assests/img/photo.jpg" width="200px" height="200px" alt="" style="border-radius: 50%; object-fit: cover; border: 3px solid lime;">
-                                <h1 style="font-style: normal; font-size: 230%; color:navy;">Hi I'm Thoriso</h1>
-                                <p style="font-size: 130%;">
-                                    I am passionate about learning new things and I am excited to have the opportunity to learn more about web development through this program.
-                                </p>
-                            </td>
-                            <td style="width: 70%; height: 400px; text-align: center; padding-bottom: 30%; background-color: aquamarine;">
-                                <h1 style="font-style: normal; font-size: 415%; color:navy;">
-                                    ABOUT ME
-                                </h1>
-                                <p style="padding-top: 90px; font-size: 130%;">
-                                    After completing my Grade 12 at Bokamoso Senior Secondary School, <br />
-                                    I enrolled for a National diploma (Information Technology) <br />
-                                    at Tshwane University of Technology in Polokwane. I completed this qualification during 2022. <br />
-                                    As a student I have been extensively involved in my school community, which has allowed me to develop strong interpersonal skills. My involvement in various events, including drama and sports carnivals, has allowed me to work closely with my peers while supporting the school community as a whole. These experiences have allowed me to develop strong time management and organizational skills.
-
-                                </p>
-                            </td>
+                            <td><p class="prof">Level 4</p> </td>
                         </tr>
-                    </table>
-                </div>
+                        <td rowspan="2" style="text-align: center;"><img src="assests/img/sql-server.png" class="icon1"> </td>
+                        <td><h3 class="subject">SQL</h3></td>
+                        <tr>
+                            <td><p class="prof">Level 3</p> </td>
+                        </tr>
+                        <td rowspan="2" style="text-align: center;"><img src="assests/img/linux.png" class="icon1"> </td>
+                        <td><h3 class="subject">Linux</h3></td>
+                        <tr>
+                            <td><p class="prof">Level 3</p> </td>
+                        </tr>
+                    </tr>
+                </table>
             </main>
-            <footer style="background-color: aquamarine;">
+            <footer>
                 <table style="width: 100%; height: 100px;;padding-bottom: 0px;">
                     <tr>
-                        <td style="width: 30%; background-color: aquamarine; text-align: center;">
+                        <td style="width: 30%; text-align: center;">
                             <a href="https://twitter.com/home" target="_blank"> 
                                 <img src="assests/img/8934.jpg" width="42px" height="42px" style="border-radius: 50%; margin: 15px;" alt="Twitter">
                             </a>
@@ -61,8 +86,8 @@
                                 <img src="assests/img/instagram.png" width="42px" height="42px" style="border-radius: 50%; margin: 15px;" alt="Instagram">
                             </a>
                         </td>
-                        <td style="text-align: center; background-color: aquamarine;">
-                            <button style="font-size: 150%; width: 200px; height: 60px; border-radius: 50px; background-color: cadetblue;" onclick="document.location='Contact us.html'">
+                        <td style="text-align: center;">
+                            <button  onclick="document.location='Contact us.html'">
                                 CONTACT ME
                             </button>
                         </td>
