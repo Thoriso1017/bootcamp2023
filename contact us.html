@@ -1,10 +1,10 @@
-<IDOCTYPE html>
-    <html>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Caontact Us</title>
+<!DOCTYPE html>
+    <html lang="en">
+        <title>Contact me</title>
         <link rel="stylesheet" href="style.css">
-        <body>
+
             <head>
+                <meta name="viewport" content="width=device-width", initial-scale=1>
                 <div>
                     <table class="navBar">
                         <tr>
@@ -21,13 +21,14 @@
                         </tr>
                     </table>
                 </div>
+                
             </head>
             <main style="height: 100vh;">
-                <div>
+                <div >
                     <table class="hd">
                         <tr>
                             <td>
-                                <h1>GET IN TOUCH</h1>
+                                <h1 id="headr"></h1>
                             </td>
                         </tr>
                     </table> 
@@ -36,21 +37,16 @@
                     <tr style="width: 50%;">
                         <td>
                             <img src="assests/img/location-pin.png" width="82px" height="82px" alt="Adress">
-                            <p style="font-size: 130%;">
-                                65 Luthuli Park Phase 1 <br />
-                                Seshego<br />
-                                Polokwane, Limpopo <br>
-                                0699
-                            </p>
+                            <p id="adr"></p>
                         </td>
                         <td>
                            <img src="assests/img/call.png" width="82pxpx" height="82pxpx" alt="Phone">
-                           <p style="font-size: 130%;">079 756 8240 </p>
+                           <p id="phoneNum"><a href="tel:0797568240">079 756 8240</a></p>
                         <td>
                             <a href="mailto:thorisoika10@gmai.com" target="_blank">
                                  <img src="assests/img/email.png" width="82pxx" height="82pxpx" alt="Instagram">
                             </a>
-                            <p style="font-size: 130%;"><a href="mailto:thorisoika10@gmai.com" target="_blank">thorisoika10@gmail.com</a></p>
+                            <p id="mail"><a href="mailto:thorisoika10@gmai.com" target="_blank">thorisoika10@gmail.com</a></p>
                         </td>
                     </tr>
                     </table>
@@ -58,16 +54,16 @@
                     <tr>
                         <td>
                             <div class="contactme">
-                                <form action="/action_page.php">
+                                <form action="https://formspree.io/f/mbjeognp" id="cform" method="post">
                                 <div class="row">
                                     <div class="col2">
-                                    <input type="text" id="fname" name="fname" required placeholder="First name" style="margin: 10px;">
+                                    <input type="text" id="fname" name="fname" minlength="2" required placeholder="First name" style="margin: 10px;">
                                     </div>
-                                    <input type="text" id="lname" name="lname" required placeholder="Last name"><br>
-                                    <input type="text" id="email" name="email" required placeholder="E-mail" style="margin: 10px;"><br>
-                                    <textarea id="review" name="review" required rows="4" cols="50" placeholder="Message" style="margin: 10px;"></textarea>
+                                    <input type="text" id="lname" name="lname" minlength="2" required placeholder="Last name"><br>
+                                    <input type="text" id="email" name="email" minlength="5" required placeholder="E-mail" style="margin: 10px;"><br>
+                                    <textarea id="review" name="review" maxlength="100" minlength="10" required rows="4" cols="50" placeholder="Message" style="margin: 10px;"></textarea>
                                     <br /><br />
-                                    <input type="submit" onclick="alert('Submitted successfully')" value="Submit">
+                                    <input type="submit"  value="Submit">
                                 
                               </form>
                             </div>
@@ -93,4 +89,14 @@
                     </tr>
                 </table>
             </footer>
-        </body>
+            
+            <script>
+
+                document.getElementById("adr").innerHTML = "65 Luthuli Park Phase 1 Seshego <br /> Polokwane, Limpopo <br /> 0700";
+                alert('Hi. Come and see my portfolio');
+             
+                document.getElementById("headr").innerHTML = "GET IN TOUCH";
+                
+                
+            </script>
+    </html>
