@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <title>Contact me</title>
+        <link rel="stylesheet" href="style.css">
+
+            <head>
+                <meta name="viewport" content="width=device-width", initial-scale=1>
+                <div>
+                    <table class="navBar">
+                        <tr>
+                            <td>
+                                <a href="index.html"><img src="assests/logo/logo.jpg" width="100px" alt=""></a>
+                            </td>
+                            <td align="right">
+                                <nav>
+                                    <a href="index.html">Home</a>
+                                    <a href="aboutMe.html" id="about-me" >About me</a>
+                                    <a href="contactUs.html">Contact me</a>  
+                                </nav>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </head>
+            <main style="height: 100vh;">
+                <div >
+                    <table class="hd">
+                        <tr>
+                            <td>
+                                <h1 id="headr"></h1>
+                            </td>
+                        </tr>
+                    </table> 
+                <table style="width: 100%; height: 10%; text-align: center;">
+                            
+                    <tr style="width: 50%;">
+                        <td>
+                            <img src="assests/img/location-pin.png" width="82px" height="82px" alt="Adress">
+                            <p id="adr"></p>
+                        </td>
+                        <td>
+                           <img src="assests/img/call.png" width="82pxpx" height="82pxpx" alt="Phone">
+                           <p id="phoneNum"><a href="tel:0797568240">079 756 8240</a></p>
+                        <td>
+                            <a href="mailto:thorisoika10@gmai.com" target="_blank">
+                                 <img src="assests/img/email.png" width="82pxx" height="82pxpx" alt="Instagram">
+                            </a>
+                            <p id="mail"><a href="mailto:thorisoika10@gmai.com" target="_blank">thorisoika10@gmail.com</a></p>
+                        </td>
+                    </tr>
+                    </table>
+                    <table style="height: 25%; width: 100%; text-align: center;">
+                    <tr>
+                        <td>
+                            <div class="contactme">
+                                <form action="https://formspree.io/f/mbjeognp" id="cform" method="post">
+                                <div class="row">
+                                    <div class="col2">
+                                    <input type="text" id="fname" name="fname" minlength="2" required placeholder="First name" style="margin: 10px;">
+                                    </div>
+                                    <input type="text" id="lname" name="lname" minlength="2" required placeholder="Last name"><br>
+                                    <input type="text" id="email" name="email" minlength="5" required placeholder="E-mail" style="margin: 10px;"><br>
+                                    <textarea id="review" name="review" maxlength="100" minlength="10" required rows="4" cols="50" placeholder="Message" style="margin: 10px;"></textarea>
+                                    <br /><br />
+                                    <input type="submit"  value="Submit">
+                                
+                              </form>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </main>
+            <footer>
+                <table class="cmf">
+                    <tr>
+                        <td>
+                            <a href="https://twitter.com/home" target="_blank"> 
+                                <img id="T" src="assests/img/8934.jpg" alt="Twitter">
+                            </a>
+                            <a href="https://facebook.com/login" target="_blank">
+                                <img id="F" src="assests/img/social-network.png" alt="Facebook">
+                            </a>
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                                <img id="I" src="assests/img/instagram.png" alt="Instagram">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+            
+            <script>
+
+                document.getElementById("adr").innerHTML = "65 Luthuli Park Phase 1 Seshego <br /> Polokwane, Limpopo <br /> 0700";
+                alert('Hi. Come and see my portfolio');
+             
+                document.getElementById("headr").innerHTML = "GET IN TOUCH";
+                
+                
+            </script>
+    </html>
